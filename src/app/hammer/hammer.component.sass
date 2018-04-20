@@ -1,2 +1,53 @@
+//reset
+ul, li, div, span
+  padding: 0
+  margin: 0
+  
+  
 \:host
   display: flex
+  flex-direction: column
+  justify-content: stretch
+
+
+#myElement
+  height: 100px
+
+ul
+  display: flex
+  flex-direction: column
+
+  li
+    height: 100px
+    margin: 10px
+    list-style: none
+    background: silver
+
+  .types
+    height: 1800px
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: stretch
+
+    div
+      height: 300px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-content: stretch
+
+      .test
+        width: 300px
+        line-height: 300px
+        background: #eee 
+        border-radius: 5px
+        text-indent: 3em
+        
+        &+div
+          flex: 1
+          line-height: 300px
+          text-indent: 3em
+
+.test-swipe
+  width: 100%
